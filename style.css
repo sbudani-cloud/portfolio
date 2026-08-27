@@ -1,0 +1,31 @@
+:root {
+    --color-titulo: #f32db1;
+    --color-fondo: #facfe7;
+}
+
+.gradiente {
+    background: radial-gradient(rgb(250, 249, 250), rgb(255, 197, 221));
+}
+
+h1 {
+    font-size: 70px;
+    color: var(--color-titulo);
+    margin: 15px;
+}
+
+p {
+    margin: 0 35px;
+}
+
+.gifs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    width: 100%;
+}
+
+.gifs img {
+    height: 70px;
+    width: auto;
+    display: block;
+}
