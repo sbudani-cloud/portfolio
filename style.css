@@ -1,10 +1,13 @@
 :root {
-    --color-titulo: #f32db1;
+    --color-titulo: #f11079;
     --color-fondo: #facfe7;
+    --font-code: "Space Grotesk", monospace;
+    --texto-navbar: #ca0062;
+    --color-texto: #db4282;
 }
 
 .gradiente {
-    background: radial-gradient(rgb(250, 249, 250), rgb(255, 197, 221));
+    background: radial-gradient(rgb(250, 250, 250), rgb(255, 197, 221));
 }
 
 h1 {
@@ -14,7 +17,9 @@ h1 {
 }
 
 p {
+    color: var(--color-texto);
     margin: 0 35px;
+    font-size: 20px;
 }
 
 .gifs {
@@ -28,4 +33,18 @@ p {
     height: 70px;
     width: auto;
     display: block;
+}
+
+.logo {
+  font-family: var(--font-code);
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--texto-navbar) !important;
+}
+
+.nav-links .nav-link {
+  color: var(--texto-navbar) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  position: relative;
 }
