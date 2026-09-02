@@ -25,7 +25,7 @@
     --navbar-border: #ffffff;
 
     --banner-alto: 70px;
-    --banner-ancho: 120px;
+    --banner-ancho: 119px;
 }
 
 body.dark-mode {
@@ -58,27 +58,45 @@ body.dark-mode {
 }
 
 h1 {
-    font-size: 70px;
+    font-family: 'HandAlph', sans-serif;
+    font-size: 80px;
     color: var(--color-titulo);
     margin: 15px;
 }
 
 h2 {
-    font-size: 45px;
+    font-family: 'HandAlph', sans-serif;
+    font-size: 55px;
     color: var(--color-subtitulo);
     margin: 5px;
 }
 
 h3 {
+    font-family: 'HandAlph', sans-serif;
     font-size: 30px;
     color: var(--color-subsubtitulo);
     margin: 5px;
 }
 
+@font-face {
+  font-family: 'PerfLem';
+  src: url('assets/Perfect Lemonade.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HandAlph';
+  src: url('assets/Handmade Alphabet.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 p {
+    font-family: 'PerfLem', sans-serif;
     color: var(--color-texto);
     margin: 0 35px;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .gifs {
@@ -294,7 +312,7 @@ p {
 .redes-panel i { color: var(--accent); width: 1.1em; }
 
 #footer {
-  text-align: center;
+  text-align: left;
   padding: 2rem 0;
   border-top: 1px solid var(--border);
   color: var(--text-muted);
