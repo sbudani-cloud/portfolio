@@ -1,3 +1,2 @@
-Bitácora
-
-26/08
+notas:
+-cambiar imagen del gato pq naquever
