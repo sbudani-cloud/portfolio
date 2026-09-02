@@ -62,6 +62,11 @@ h1 {
     font-size: 80px;
     color: var(--color-titulo);
     margin: 15px;
+
+    display: inline-block;
+    background: linear-gradient(to right, #08ff10, #0b098b);
+    background-clip: text;
+    color: transparent;
 }
 
 h2 {
