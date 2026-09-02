@@ -82,28 +82,28 @@ p {
 }
 
 .gifs {
-  position: relative;
+  display: flex;
   width: 100%;
   height: var(--banner-alto);
-  overflow: hidden; /* esto es lo que recorta prolijo el sobrante de la izquierda */
+  overflow: hidden;
+}
 
+.gifs-repetido {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 100%;
   background-image: url('assets/banner2.gif');
   background-repeat: repeat-x;
   background-position: right center;
-  background-size: auto var(--banner-alto);
+  background-size: var(--banner-ancho) var(--banner-alto);
 }
 
-.gifs::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
+.gifs-final {
+  flex: 0 0 var(--banner-ancho);
   width: var(--banner-ancho);
-  background-image: url('assets/banner.gif');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: auto 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .logo {
